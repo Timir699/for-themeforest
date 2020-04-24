@@ -1,0 +1,351 @@
+/*--------------------------------------------------------------*/
+/*Google Fonts Starts*/
+/*------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800&display=swap');
+/*--------------------------------------------------------------*/
+/*Google Fonts Ends*/
+/*------------------------------------------------------------*/
+
+/*--------------------------------------------------------------*/
+/*Global CSS Starts*/
+/*------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+ul,li,ol {
+	list-style: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+button:focus{
+	outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+/*--------------------------------------------------------------*/
+/*Global CSS Ends*/
+/*------------------------------------------------------------*/
+
+/*--------------------------------------------------------------*/
+/*Header CSS Start*/
+/*------------------------------------------------------------*/
+.header {
+	padding: 10px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.navfixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 !important;
+    background: rgba(64, 64, 64, .7) !important;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+    transition: all linear 0.5s;
+    z-index: 99999;
+}
+.navbar-brand {
+	font-size: 30px;
+	color: #b3b3b3;
+}
+.navbar-brand:hover {
+	color: rgba(0, 204, 68, 1);
+}
+/*.navbar-nav .nav-item.active .nav-link {
+	color: rgba(37, 172, 202, .9);
+}*/
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0;
+	margin-left: 40px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	transition: all linear .3s;
+	color: #cccccc;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	color:rgba(0, 204, 68, 1);
+}
+.navbar-toggler-icon {
+	color: #cccccc;;
+}
+
+/*--------------------------------------------------------------*/
+/*Header CSS Ends*/
+/*------------------------------------------------------------*/
+
+/*--------------------------------------------------------------*/
+/*Banner CSS Starts*/
+/*------------------------------------------------------------*/
+
+.banner {
+	background: url(../img/steve-carter-Ixp4YhCKZkI-unsplash.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.bnr_overlay {
+	padding: 250px 0px 250px 0px;
+	background: rgba(0, 0, 0, .7);
+}
+.bnr_content {
+	text-align: center;
+}
+.banner h1 {
+	font-size: 72px;
+	font-weight: 600;
+	text-align: center;
+	color: #cccccc;
+}
+.bnr_content p {
+	font-size: 16px;
+	color: #cccccc;
+	margin-bottom: 20px;
+}
+.bnr_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bnr_btn a{
+	display: block;
+	height: 40px;
+	width: 130px;
+	border: 1px solid rgba(0, 204, 68, .5); 
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	overflow: hidden;
+}
+.bnr_btn a:after {
+	content: '';
+	height: 40px;
+	width: 130px;
+	position: absolute;
+	top: 0;
+	right: -103%;
+	background: rgba(0, 204, 68, .8);
+	opacity: 0;
+	transition: all .2s;
+}
+.bnr_btn a:hover {
+	border: none;
+}
+.bnr_btn a:hover:after {
+	right: 0;
+	opacity: 1;
+	z-index: -999;
+	border-bottom: 1px solid rgba(0, 204, 68, 1);
+}
+/*--------------------------------------------------------------*/
+/*Banner CSS Ends*/
+/*------------------------------------------------------------*/
+
+/*--------------------------------------------------------------*/
+/*About CSS Starts*/
+/*------------------------------------------------------------*/
+
+.about {
+	background: #0e0f10;
+	padding: 50px 0px;
+}
+.abt_content h2 {
+	font-size: 48px;
+	color: #cccccc;
+	font-weight: 600;
+
+}
+.abt_content h4 {
+	font-size: 18px;
+	color: rgba(0, 204, 68, 1);
+	font-weight: 300;
+}
+.abt_us {
+	font-size: 14px;
+	color: #cccccc;
+	margin: 50px 0px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.abt_us_two {
+	font-size: 14px;
+	color: #cccccc;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+/*--------------------------------------------------------------*/
+/*About CSS Ends*/
+/*------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
+/*Demo CSS Starts*/
+/*------------------------------------------------------------*/
+
+
+.demo {
+	background: #0e0f10;
+	padding: 50px 0px;
+}
+.demo_header h2 {
+	font-size: 48px;
+	color: #cccccc;
+	font-weight: 600;
+}
+.demo_header p {
+	font-size: 18px;
+	color: rgba(0, 204, 68, 1);
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+.demo_page {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+}
+.demo_overlay {
+	background: rgba(0, 0, 0, .8);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all linear .1s;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.demo_page img {
+	transition: all linear 4s;
+
+}
+.demo_page:hover img{
+	width: 100%;
+	margin-top: -212%;
+}
+.demo_con:hover .demo_overlay {
+	opacity: 1;
+}
+.demo_btn {
+	height: 40px;
+	width: 150px;
+	background: rgba(0, 204, 68, .8);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;	
+}
+.demo_btn:hover {
+	background: rgba(0, 204, 68, .5);
+}
+
+
+/*--------------------------------------------------------------*/
+/*Demo CSS Ends*/
+/*------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
+/*Footer CSS Starts*/
+/*------------------------------------------------------------*/
+
+.footer {
+	background: #000;
+	padding: 20px 0px;
+}
+.footer_con p {
+	color: #cccccc;
+}
+
+/*--------------------------------------------------------------*/
+/*Footer CSS Ends*/
+/*------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
+/*Responive CSS Starts*/
+/*------------------------------------------------------------*/
+
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 0px;
+	}
+ }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.bnr_overlay {
+    	padding: 150px 0px 100px 0px;
+    }	
+ }
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 0px;
+	}
+	.bnr_overlay {
+    	padding: 150px 0px 100px 0px;
+    }
+    .footer_con p {
+    	font-size: 11px;
+    }	
+
+
+
+ }
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/*Responive CSS Ends*/
+/*------------------------------------------------------------*/
